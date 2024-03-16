@@ -12,6 +12,7 @@ alias pc='pbcopy'
 alias pv='pbpaste'
 alias myip='ifconfig en0 | grep '\''inet '\'' | awk {'\''print $2'\''}'
 # Git
+alias git='lg2'
 alias gf='git fetch'
 alias ga='git add . && git status'
 alias gr='git log --graph --oneline --full-history --color '
