@@ -38,7 +38,7 @@ alias subll='gd @ @~ --name-only | xargs subl'
 # Functions
 
 # Taken from https://tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html
-function colours () {
+colours () {
     #   This function echoes a bunch of color codes to the
     #   terminal to demonstrate what's available.  Each
     #   line is the color code of one forground color,
@@ -62,7 +62,7 @@ function colours () {
 }
 
 # Checks Internet connection
-function myping() {
+myping () {
     ping 8.8.8.8 | while read pong; do echo "$(date): $pong"; done
 }
 
