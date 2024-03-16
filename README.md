@@ -6,7 +6,7 @@ This is a collection of setup scripts for the great [a-shell](https://github.com
 Clone this repository using the builtin git library [libgit2](https://github.com/libgit2/libgit2)
 
 ```bash
-lg2 https://github.com/churris-x/a-shell.scripts .scripts
+lg2 clone https://github.com/churris-x/a-shell.scripts .scripts
 ```
 
 Run setup.sh script
