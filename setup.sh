@@ -16,6 +16,10 @@ if [ ! -L .aliases ]; then
     ln -s .scripts/.aliases .aliases
 fi
 
+if [ ! -L .gitconfig ]; then
+    ln -s .scripts/.gitconfig .gitconfig
+fi
+
 # Configure appearance
 config -b "#2d2a2e"
 config -f "#fcfcfa"
