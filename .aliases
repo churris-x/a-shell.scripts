@@ -13,26 +13,26 @@ alias pv='pbpaste'
 alias myip='ifconfig en0 | grep '\''inet '\'' | awk {'\''print $2'\''}'
 # Git
 alias git='lg2'
-alias gs='git status'
-alias gd='git diff'
-alias gp='git push'
-alias gl='git pull'
-alias gb='git branch'
-alias gk='git checkout'
-alias gc='git commit -v -a'
-alias gv='git commit -v'
-alias gf='git fetch'
-alias ga='git add . && git status'
-alias gr='git log --graph --oneline --full-history --color '
-alias gkb='git checkout -b'
-alias gcm='git commit -m'
-alias grune='git fetch -p && git branch --merged | grep -v \* | xargs git branch -d'
-alias dirstatus='ls | xargs -I SHA sh -c '\''cd SHA/; echo; echo SHA; git status -s; cd -;'\'''
+alias gs='lg2 status'
+alias gd='lg2 diff'
+alias gp='lg2 push'
+alias gl='lg2 pull'
+alias gb='lg2 branch'
+alias gk='lg2 checkout'
+alias gc='lg2 commit -v -a'
+alias gv='lg2 commit -v'
+alias gf='lg2 fetch'
+alias ga='lg2 add . && lg2 status'
+alias gr='lg2 log --graph --oneline --full-history --color '
+alias gkb='lg2 checkout -b'
+alias gcm='lg2 commit -m'
+alias grune='lg2 fetch -p && lg2 branch --merged | grep -v \* | xargs lg2 branch -d'
+alias dirstatus='ls | xargs -I SHA sh -c '\''cd SHA/; echo; echo SHA; lg2 status -s; cd -;'\'''
 # Github
 alias ghpr='gh pr create -a @me -l enhancement'
 alias ghprb='gh pr create -a @me -l bug'
 # Editors
-alias sublm='git diff --name-only | xargs subl'
+alias sublm='lg2 diff --name-only | xargs subl'
 alias subll='gd @ @~ --name-only | xargs subl'
 
 # Functions
@@ -71,7 +71,7 @@ export CLICOLOR=1
 export LSCOLORS=cxfxexexDxexexDxDxcxcx
 
 # function parse_git_branch {
-#     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* master/(master)/' -e 's/* \(.*\)/(__\1__)/'
+#     lg2 branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* master/(master)/' -e 's/* \(.*\)/(__\1__)/'
 # }
 # function proml {
 #   local       RESET="\[\033[0m\]"
