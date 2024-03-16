@@ -11,7 +11,7 @@ lg2 clone https://github.com/churris-x/a-shell.scripts .scripts
 
 Run setup.sh script
 ```
-. .scripts/setup.sh
+sh .scripts/setup.sh
 ```
 
 ## Caveats

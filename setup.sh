@@ -17,6 +17,9 @@ if [ ! -L .aliases ]; then
 fi
 
 # Configure appearance
-config -b #2d2a2e
-config -f #fcfcfa
-config -c #727072
+config -b "#2d2a2e"
+config -f "#fcfcfa"
+config -c "#727072"
+
+# this is crashing?
+# source .profile
