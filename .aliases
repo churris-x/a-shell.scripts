@@ -5,8 +5,8 @@
 alias grep='grep --color'
 alias cdscripts='cd ~/Documents/.scripts'
 alias src='source ~/Documents/.aliases'
-alias la='ls -lah --group-directories-first --color'
-alias ll='ls -lhG --group-directories-first --color'
+alias la='ls -lah --group-directories-first'
+alias ll='ls -lhG --group-directories-first'
 alias pcat='[ ! -f "/opt/homebrew/bin/bat" ] && (pbpaste | cat) || pbpaste | bat'
 alias pc='pbcopy'
 alias pv='pbpaste'
@@ -64,31 +64,31 @@ function myping() {
 export CLICOLOR=1
 export LSCOLORS=cxfxexexDxexexDxDxcxcx
 
-function parse_git_branch {
-    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* master/(master)/' -e 's/* \(.*\)/(__\1__)/'
-}
-function proml {
-  local       RESET="\[\033[0m\]"
-  local        BLUE="\[\033[0;34m\]"
-  local  LIGHT_BLUE="\[\033[1;34m\]"
-  local         RED="\[\033[0;31m\]"
-  local   LIGHT_RED="\[\033[1;31m\]"
-  local       GREEN="\[\033[0;32m\]"
-  local LIGHT_GREEN="\[\033[1;32m\]"
-  local       WHITE="\[\033[1;37m\]"
-  local  LIGHT_GRAY="\[\033[0;37m\]"
+# function parse_git_branch {
+#     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* master/(master)/' -e 's/* \(.*\)/(__\1__)/'
+# }
+# function proml {
+#   local       RESET="\[\033[0m\]"
+#   local        BLUE="\[\033[0;34m\]"
+#   local  LIGHT_BLUE="\[\033[1;34m\]"
+#   local         RED="\[\033[0;31m\]"
+#   local   LIGHT_RED="\[\033[1;31m\]"
+#   local       GREEN="\[\033[0;32m\]"
+#   local LIGHT_GREEN="\[\033[1;32m\]"
+#   local       WHITE="\[\033[1;37m\]"
+#   local  LIGHT_GRAY="\[\033[0;37m\]"
 
-  if [ "$USER" == "root" ]; then
-    USERCOLOR="$LIGHT_RED"
-  else
-    USERCOLOR="$LIGHT_BLUE"
-  fi
+#   if [ "$USER" == "root" ]; then
+#     USERCOLOR="$LIGHT_RED"
+#   else
+#     USERCOLOR="$LIGHT_BLUE"
+#   fi
 
-  PS1="$LIGHT_GREEN[$USERCOLOR\u@\h $LIGHT_GREEN\w]$GREEN\$(parse_git_branch)$WHITE\$$RESET "
-  PS2='> '
-  PS4='+ '
+#   PS1="$LIGHT_GREEN[$USERCOLOR\u@\h $LIGHT_GREEN\w]$GREEN\$(parse_git_branch)$WHITE\$$RESET "
+#   PS2='> '
+#   PS4='+ '
 
-  export SUDO_PS1="$LIGHT_GREEN[$LIGHT_RED\u@\h \w$LIGHT_GREEN]$WHITE\$$RESET "
-}
-proml
+#   export SUDO_PS1="$LIGHT_GREEN[$LIGHT_RED\u@\h \w$LIGHT_GREEN]$WHITE\$$RESET "
+# }
+# proml
 
