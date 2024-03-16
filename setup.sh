@@ -21,5 +21,4 @@ config -b "#2d2a2e"
 config -f "#fcfcfa"
 config -c "#727072"
 
-# this is crashing?
-# source .profile
+source .profile
