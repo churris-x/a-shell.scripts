@@ -21,3 +21,9 @@ The shell that is being run is actually [dash](https://manpages.ubuntu.com/manpa
 
 ## Aliases
 According to [this issue](https://github.com/holzschu/a-shell/issues/40) it is possible to add a `.profile` file that gets run and set up aliases.
+
+So far I have not been able to add function declarations directly into the aliases file. The alternative seems to be to create a separate file for each function and then alias the running of said file, eg:
+
+```sh
+alias myfunc='sh ~/Documents/.scripts/myfunc.sh'
+```
