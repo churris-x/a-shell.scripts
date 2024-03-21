@@ -22,3 +22,4 @@ colours () {
     done
     echo
 }
+colours
