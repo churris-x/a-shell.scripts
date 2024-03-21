@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # iOS 17 - Carvalho (Fran's iPhone 12 mini)
 
 # Aliases
@@ -67,7 +67,7 @@ myping () {
     ping 8.8.8.8 | while read pong; do echo "$(date): $pong"; done
 }
 
-function working () {
+working() {
     echo 'its working alright'
     done
 }
