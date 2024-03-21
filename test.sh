@@ -6,4 +6,11 @@ else
     echo 'nay'
 fi
 
+
+test () {
+    echo 'test function'
+}
+
+test
+
 echo 'fin'
