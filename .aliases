@@ -2,11 +2,12 @@
 # iOS 17 - Carvalho (Fran's iPhone 12 mini)
 
 # Aliases
-alias grep='grep --color'
-alias cds='cd ~/Documents/.scripts'
 alias src='source ~/Documents/.aliases'
+alias cds='cd ~/Documents/.scripts'
+alias grep='grep --color'
 alias la='ls -lah --group-directories-first'
 alias ll='ls -lhG --group-directories-first'
+alias trea='tree -a -I .git'
 alias pcat='[ ! -f "/opt/homebrew/bin/bat" ] && (pbpaste | cat) || pbpaste | bat'
 alias pc='pbcopy'
 alias pv='pbpaste'
