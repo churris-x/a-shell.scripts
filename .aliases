@@ -39,7 +39,6 @@ alias subll='gd @ @~ --name-only | xargs subl'
 # Functions
 alias test='sh ~/Documents/.scripts/functions/test.sh'
 alias colours='sh ~/Documents/.scripts/functions/colours.sh'
-# alias myping='sh ~/Documents/.scripts/functions/myping.sh'
 
 # Colors for bash terminal
 export CLICOLOR=1
