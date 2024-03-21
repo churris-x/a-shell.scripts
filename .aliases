@@ -3,7 +3,7 @@
 
 # Aliases
 alias grep='grep --color'
-alias cdscripts='cd ~/Documents/.scripts'
+alias cds='cd ~/Documents/.scripts'
 alias src='source ~/Documents/.aliases'
 alias la='ls -lah --group-directories-first'
 alias ll='ls -lhG --group-directories-first'
