@@ -23,7 +23,8 @@ alias gc='lg2 commit -v -a'
 alias gv='lg2 commit -v'
 alias gf='lg2 fetch'
 alias ga='lg2 add . && lg2 status'
-alias gr='lg2 log --graph --oneline --full-history --color '
+# alias gr='lg2 log --graph --oneline --full-history --color '
+alias gr='lg2 log -2'
 alias gkb='lg2 checkout -b'
 alias gcm='lg2 commit -m'
 alias grune='lg2 fetch -p && lg2 branch --merged | grep -v \* | xargs lg2 branch -d'
@@ -64,6 +65,11 @@ colours () {
 # Checks Internet connection
 myping () {
     ping 8.8.8.8 | while read pong; do echo "$(date): $pong"; done
+}
+
+working () {
+    echo 'its working alright'
+    done
 }
 
 # Colors for bash terminal
