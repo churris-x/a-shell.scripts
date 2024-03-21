@@ -1,5 +1,9 @@
 #!/bin/sh
 # Checks Internet connection
 
-ping 8.8.8.8 | while read pong; do echo "$(date): $pong"; done
+# This is currently not working for some reason ¯\_(ツ)_/¯
+myping () {
+    ping 8.8.8.8 | while read -r pong; do echo "$(date): $pong"; done
+}
 
+myping

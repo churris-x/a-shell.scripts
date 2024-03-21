@@ -11,6 +11,7 @@ alias pcat='[ ! -f "/opt/homebrew/bin/bat" ] && (pbpaste | cat) || pbpaste | bat
 alias pc='pbcopy'
 alias pv='pbpaste'
 alias myip='ifconfig en0 | grep '\''inet '\'' | awk {'\''print $2'\''}'
+alias pong='ping 8.8.8.8'
 # Git
 alias git='lg2'
 alias gs='lg2 status'
@@ -38,7 +39,7 @@ alias subll='gd @ @~ --name-only | xargs subl'
 # Functions
 alias test='sh ~/Documents/.scripts/functions/test.sh'
 alias colours='sh ~/Documents/.scripts/functions/colours.sh'
-alias myping='sh ~/Documents/.scripts/functions/myping.sh'
+# alias myping='sh ~/Documents/.scripts/functions/myping.sh'
 
 # Colors for bash terminal
 export CLICOLOR=1

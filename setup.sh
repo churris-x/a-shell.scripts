@@ -26,6 +26,7 @@ config -b "#2d2a2e"
 config -f "#fcfcfa"
 config -c "#727072"
 
+# impossible to parse the current git branch name because libgit is old and garbage :D
 # parse_git_branch () {
 #     lg2 branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* master/(master)/' -e 's/* \(.*\)/(__\1__)/'
 # }
