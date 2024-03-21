@@ -1,9 +1,9 @@
 echo 'testing script'
 
-if 'bug'
+if true
     then echo 'yay'
 else
     echo 'nay'
 fi
 
-echo 'done'
+echo 'fin'
