@@ -23,6 +23,10 @@ Your home directory `~/Documents` should look like this
 └── .scripts        # git repo
 ```
 
+The setup script automatically sets a "theme", but this can be changed in the file or with the native `config` command.
+
+Check the [a-shell docs](https://bianshen00009.gitbook.io/a-guide-to-a-shell/basic-tutorials/configure-the-shell#define-the-prompt) on how to set up a `$PS1` / Primary prompt variable
+
 See [git](#git) for how to set up access to private repos
 
 ## Use
@@ -34,8 +38,6 @@ The main thing this repository does is create and manage three general dot files
 - `.gitconfig` : general config such as username
 
 To add aliases simply edit the alias file and run `src` to source it.
-
-The setup script automatically sets a "theme", but this can be changed on the file or with the native `config` command.
 
 ## Caveats
 In iOS you cannot modify the `~/` folder directly so a-shell has made the compromise of treating `~/Documents` as the root folder. This applies to scripts and dotfiles.
