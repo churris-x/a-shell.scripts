@@ -1,9 +1,9 @@
 # A-Shell .scripts
 
-This is a collection of setup scripts for the [a-shell](https://github.com/holzschu/a-shell) terminal for iOS.
+This is a collection of setup scripts and dotfiles for the [a-shell](https://github.com/holzschu/a-shell) terminal app for iOS.
 
 ## Getting started
-1. Download and install the app from [app store](https://holzschu.github.io/a-Shell_iOS/)
+1. Download and install the app from the [app store](https://holzschu.github.io/a-Shell_iOS/)
 2. Clone this repository using the builtin git library [libgit2](https://github.com/libgit2/libgit2)
 ```sh
 lg2 clone https://github.com/churris-x/a-shell.scripts .scripts
@@ -25,9 +25,9 @@ Your home directory `~/Documents` should look like this
 
 The setup script automatically sets a "theme", but this can be changed in the file or with the native `config` command.
 
-Check the [a-shell docs](https://bianshen00009.gitbook.io/a-guide-to-a-shell/basic-tutorials/configure-the-shell#define-the-prompt) on how to set up a `$PS1` / Primary prompt variable
+Check the [a-shell docs](https://bianshen00009.gitbook.io/a-guide-to-a-shell/basic-tutorials/configure-the-shell#define-the-prompt) on how to set up the `$PS1` (Prompt String One / Primary prompt variable)
 
-See [git](#git) for how to set up access to private repos
+See the [Git](#git) section for how to set up access to private repos
 
 ## Use
 The main thing this repository does is create and manage three general dot files, `.profile`, `.aliases` and `.gitconfig`. This is done by creating symbolic links to each of those files in the root folder, so the files can be portable and kept up to date.
@@ -65,7 +65,7 @@ There is a section on the [a-shel docs](https://bianshen00009.gitbook.io/a-guide
 [user]
     password = ~/Documents/.token
 ``` 
-would be ideal, but I didn't get the syntax correct or it's compatibility issue with `libgit2`.
+would be ideal, but I didn't get the syntax correct or it's a compatibility issue with `libgit2`.
 
 Best way to do it is to configure it locally for the repo, so `vim .git/config` and add the token as a password field directly eg: `password = asdfjklj23k432...`
 
