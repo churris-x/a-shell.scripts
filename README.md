@@ -79,5 +79,5 @@ My main use of this app is to keep my obsidian vault synced since I store it on 
 5. (Optional) You can also install the Git plugin from the community plugin section to automatically keep things updated every so often
 
 ## N.B.
-All of this was a cobbled together from my personal bash configs, and as such not all the aliases and commands are tested and working as intended. Please check any code you are running before doing so. Have fun!
+All of this was cobbled together from my personal bash configs, and as such not all the aliases and commands are tested and working as intended. Please check any code you are running before doing so. Have fun!
 
